@@ -14,7 +14,7 @@ describe('Simple Books API', () =>{
             expect(response.body).to.include({
                 id:1,
                 name:'The Russian',
-                // could add way more attribute
+                // could add way more attributes
             })
             // cy.log('Status: ' + response.status)
             // cy.log('Body: ' + JSON.stringify(response.body))
