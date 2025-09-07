@@ -4,7 +4,7 @@ describe('E2E demoblaze test', () => {
     cy.visit(baseUrl)
 
     // 1. Create user account
-    const username = 'testuser1234567!'
+    const username = `testuser${Date.now()}!`
     const password = 'Password1234!'
     cy.get('#signin2').click()
     cy.get('#sign-username').type(username, {delay:0})
